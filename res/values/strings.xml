@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">test_project</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">LookMyWay</string>
+    <string name="myfriends">MY FRIENDS</string>
+    <string name="action_settings">SETTINGS</string>
+    <string name="myfriends_my_look_tv">MY LOOK</string>
+    <string name="myfriends_my_ways_tv">MY WAYS</string>
+    <string name="myfriends_my_guided_ways_tv">MY GUIDED WAYS</string>
+    <string name="myfriends_my_friends_tv">MY FRIENDS</string>
+    <string name="myfriends_my_friedge_tv">MY FRIEDGE</string>
+    <string name="myfriends_my_suitecase_tv">MY SUITECASE</string>
+    <string name="myfriends_my_town_tv">MY TOWN</string>
+    <string name="myfriends_my_birth_tv">MY BIRTH</string>
+    <string name="myfriends_my_look_iv_descr">My Look Row - Image (Avatar)</string>
 
 </resources>

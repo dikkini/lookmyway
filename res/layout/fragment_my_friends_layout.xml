@@ -1,7 +1,300 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-          android:id="@+id/tv"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:gravity="center">
-</TextView>
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/Black">
+
+    <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    >
+
+                <view
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:id="@+id/view"
+                        android:text="@string/myfriends_my_look_tv"
+                        android:textSize="40sp"
+                        android:singleLine="true"
+                        android:layout_gravity="center"
+                        android:paddingLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/White"/>
+
+                <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/myfriends_my_look_iv"
+                        android:src="@drawable/pokerface"
+                        android:baselineAlignBottom="false"
+                        android:contentDescription="@string/myfriends_my_look_iv_descr"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/White" />
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/linearLayout"
+                    android:orientation="horizontal">
+
+                <view
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myfriends_my_ways_tv"
+                        android:text="@string/myfriends_my_ways_tv"
+                        android:textSize="40sp"
+                        android:singleLine="true"
+                        android:paddingLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/White"/>
+
+                <view
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:id="@+id/myfriends_my_ways_tv_number"
+                        android:text="999"
+                        android:textSize="30sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/White"/>
+
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/White" />
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/linearLayout2">
+
+                <view
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myfriends_my_guided_ways_tv"
+                        android:text="@string/myfriends_my_guided_ways_tv"
+                        android:textSize="30sp"
+                        android:singleLine="true"
+                        android:paddingLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/White"/>
+
+                <view
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myfriends_my_guided_ways_tv_number"
+                        android:text="999"
+                        android:textSize="30sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/White"/>
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/White" />
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/linearLayout3">
+
+                <view
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myfriends_my_friends_tv"
+                        android:text="@string/myfriends_my_friends_tv"
+                        android:textSize="40sp"
+                        android:singleLine="true"
+                        android:paddingLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/White"/>
+
+                <view
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myfriends_my_friends_tv_number"
+                        android:text="999"
+                        android:textSize="30sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/White"/>
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/White" />
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/linearLayout4">
+
+                <view
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myfriends_my_friedge_tv"
+                        android:text="@string/myfriends_my_friedge_tv"
+                        android:textSize="40sp"
+                        android:singleLine="true"
+                        android:paddingLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/White"/>
+
+                <view
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myfriends_my_friedge_tv_number"
+                        android:text="999"
+                        android:textSize="30sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/White"/>
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/White" />
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/linearLayout5">
+
+                <view
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myfriends_my_suitecase_tv"
+                        android:text="@string/myfriends_my_suitecase_tv"
+                        android:textSize="39sp"
+                        android:singleLine="true"
+                        android:paddingLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/White"/>
+
+                <view
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myfriends_my_suitecase_tv_number"
+                        android:text="999"
+                        android:textSize="30sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/White"/>
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/White" />
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/linearLayout6">
+
+                <view
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myfriends_my_town_tv"
+                        android:text="@string/myfriends_my_town_tv"
+                        android:textSize="40sp"
+                        android:singleLine="true"
+                        android:paddingLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/White"/>
+
+                <view
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myfriends_my_town_tv_text"
+                        android:text="999"
+                        android:textSize="30sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/White"/>
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/White" />
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/linearLayout7">
+
+                <view
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myfriends_my_birth_tv"
+                        android:text="@string/myfriends_my_birth_tv"
+                        android:textSize="40sp"
+                        android:singleLine="true"
+                        android:paddingLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/White"/>
+
+                <view
+                        class="com.lookmyway.activity.customview.FuturicaRegularTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/myfriends_my_birth_tv_number"
+                        android:text="9999"
+                        android:textSize="30sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/White"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
