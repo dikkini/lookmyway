@@ -9,27 +9,34 @@ import android.widget.TextView;
  * Created by haribo on 03.06.13.
  */
 public class FuturicaBoldTextView extends TextView {
+    private Context mContext;
 
     public FuturicaBoldTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        init();
+        this.mContext = context;
+        if(!isInEditMode()) {
+            init();
+        }
     }
 
     public FuturicaBoldTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init();
+        this.mContext = context;
+        if(!isInEditMode()) {
+            init();
+        }
     }
 
     public FuturicaBoldTextView(Context context) {
         super(context);
-        init();
+        this.mContext = context;
+        if(!isInEditMode()) {
+            init();
+        }
     }
 
     public void init() {
-        Context context = getContext();
-        assert context != null;
-        Typeface tf = Typeface.createFromAsset(context.getAssets(), "fonts/a_Futurica ExtraBold.ttf");
+        Typeface tf = Typeface.createFromAsset(mContext.getAssets(), "fonts/a_Futurica ExtraBold.ttf");
         setTypeface(tf ,1);
     }
-
 }
